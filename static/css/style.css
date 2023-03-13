@@ -1,0 +1,147 @@
+.welcome {
+  background-image: url("../images/foopanda-bg-1.jpg");
+  width: auto;
+}
+
+.restaurants_tag {
+  text-decoration: none;
+  color: black;
+  line-height: 25px;
+}
+
+.restaurants_tag:nth-child(1):hover {
+  color: red !important;
+}
+
+.menu_component:hover {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.img_thumbnail {
+  width: 300px;
+  height: 250px;
+}
+
+.foodpanda_about_us {
+  min-height: 400px;
+  height: auto;
+}
+
+.food-panda-red {
+  color: #d70f64 !important;
+}
+
+.food-panda-red-button {
+  color: white;
+  background-color: #d70f64 !important;
+  border: #d70f64 !important;
+}
+
+.parallax-careers {
+  /* The image used */
+  background-image: url("../images/foodpanda-career.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax_press {
+  background-image: url("../images/foodpanda-section3.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact_us {
+  background-color: #d70f64 !important;
+  min-height: 250px;
+}
+
+.get_in_touch_btn {
+  background-color: white;
+  color: #d70f64 !important;
+}
+
+@media (max-width: 575.98px) {
+  .footer-nav {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .menu_component_mobile {
+    text-align: center !important;
+  }
+}
+.restaurant_dishes {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.RestaurantRatings_wrapper {
+  border: 1px solid #e9e9eb;
+  box-shadow: 0 1px 5px #f9f9f9;
+  border-radius: 6px;
+  text-align: center;
+  padding: 8px;
+}
+.RestaurantRatings_avgRating {
+  color: #3d9b6d;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9e9eb;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+.RestaurantRatings_totalRatings {
+  font-size: 11px;
+  color: #8b8d97;
+  font-family: ProximaNovaCondensedRegular, arial, Helvetica Neue, sans-serif;
+  font-weight: 600;
+}
+.menu_card {
+  padding-bottom: 14px;
+}
+.menu-image {
+  width: 118px;
+  height: 96px;
+}
+.restraunt_menu_headig {
+  border-bottom: 1px dashed #d3d3d3;
+  padding-bottom: 14px;
+}
+.menu-card-divider {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.add-item-button {
+  position: relative;
+  right: 90px;
+  top: 40px;
+  background-color: white;
+  color: #3d9b6d;
+}
+.cart-count {
+  position: relative;
+  right: 12px;
+  top: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+@media (max-width: 410px) {
+  .add-item-button {
+    bottom: 25px;
+    left: 0px;
+    right: 0px;
+    top: -20px;
+  }
+}
+
