@@ -78,6 +78,10 @@
   background-color: white;
   color: #d70f64 !important;
 }
+.get_in_touch_btn:hover{
+  color: black !important;
+  background-color: white;
+}
 
 @media (max-width: 575.98px) {
   .footer-nav {
@@ -143,15 +147,29 @@
   font-size: 12px;
   font-weight: 700;
 }
-@media (max-width: 410px) {
-  .add-item-button {
-    bottom: 25px;
-    left: 0px;
-    right: 0px;
-    top: -20px;
+@media (min-width: 576px) {
+  .custom-input-group{
+    width: 25%; 
+    margin: auto;
   }
 }
-
-
+@media (min-width: 768px) {
+  .custom-input-group{
+    width: 50%;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .custom-input-group{
+    width: 25%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .cart-custom-input-group{
+    width: 50%;
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=/App.d36a57b6.css.map */

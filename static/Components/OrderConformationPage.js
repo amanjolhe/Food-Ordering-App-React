@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { imagecdn } from "./Constant";
+import no_image from "../images/noimage.jpg";
 
 const OrderConformationPage = () => {
   const { OrderId } = useParams();
@@ -74,17 +75,26 @@ const OrderConformationPage = () => {
                       <tr>
                         <td width="20%">
                           <img
-                            src={imagecdn + item.cloudinaryImageId}
+                            src={
+                              item.cloudinaryImageId
+                                ? imagecdn + item.cloudinaryImageId
+                                : no_image
+                            }
                             width={90}
                           />
                         </td>
                         <td width="60%">
                           <span className="font-weight-bold">{item.name}</span>
+                          <div className="product-qty">
+                            <span className="d-block">
+                              Quantity:{item.quantity}
+                            </span>
+                          </div>
                         </td>
                         <td width="20%">
                           <div className="text-right">
                             <span className="font-weight-bold">
-                            ₹ {item.price/100}
+                              ₹ {item.price / 100}
                             </span>
                           </div>
                         </td>
