@@ -1,11 +1,11 @@
 import React from "react";
-import { imagecdn } from "./Constant";
+import { menuItemImageCdn } from "./Constant";
 import no_image from "../images/noimage.jpg";
 import veglogo from "../images/veg.jpg";
 import nonveglogo from "../images/nonveg.jpg";
 import AddRemoveButtonComponent from "./AddRemoveButtonComponent";
 
-const CartItemComponent = (item) => {
+const CartItemComponent = (item) => {debugger
   return (
     <>
       <div className="menu-card p-2 m-2">
@@ -14,8 +14,8 @@ const CartItemComponent = (item) => {
             <img
               className="img-thumbnail menu-image"
               src={
-                item.cloudinaryImageId
-                  ? imagecdn + item.cloudinaryImageId
+                item.imageId
+                  ? menuItemImageCdn + item.imageId
                   : no_image
               }
             />
@@ -24,7 +24,7 @@ const CartItemComponent = (item) => {
             <div>
               <img
                 src={
-                  item?.attributes.vegClassifier === "VEG"
+                  item?.itemAttribute.vegClassifier === "VEG"
                     ? veglogo
                     : nonveglogo
                 }

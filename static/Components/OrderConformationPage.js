@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { imagecdn } from "./Constant";
+import { menuItemImageCdn } from "./Constant";
 import no_image from "../images/noimage.jpg";
 
 const OrderConformationPage = () => {
@@ -76,8 +76,8 @@ const OrderConformationPage = () => {
                         <td width="20%">
                           <img
                             src={
-                              item.cloudinaryImageId
-                                ? imagecdn + item.cloudinaryImageId
+                              item.imageId
+                                ? menuItemImageCdn + item.imageId
                                 : no_image
                             }
                             width={90}
