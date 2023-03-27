@@ -8,7 +8,6 @@ const OrderConformationPage = () => {
   const { OrderId } = useParams();
   const Store = useSelector((store) => store.orderDetails);
   const orderDetails = Store.orders[OrderId];
-  debugger;
   return (
     <div className="container mt-5 mb-5">
       <div className="row d-flex justify-content-center">

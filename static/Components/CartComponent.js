@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import CartItemComponent from "./CartItemComponent";
 const CartComponent = () => {
   const Store = useSelector((store) => store.cart);
-  debugger;
   return (
     <>
       <div className="container">

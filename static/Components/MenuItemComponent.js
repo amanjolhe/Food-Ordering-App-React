@@ -16,17 +16,14 @@ const MenuItemComponent = ({ card }) => {
   const dispatch = useDispatch();
   function handleAddAction(item) {
     if (StoreItem.length > 0 && StoreItem[0].quantity) {
-      debugger;
       StoreItem[0].quantity += 1;
       dispatch(addToCart(StoreItem));
 
-      debugger;
     } else {
       const newMenuItem = { ...item, quantity: 1 };
       dispatch(addToCart(newMenuItem));
     }
   }
-  debugger;
   return (
     <>
       <Accordion defaultActiveKey="Recommended" className="bg-white">

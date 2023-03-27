@@ -5,7 +5,7 @@ import veglogo from "../images/veg.jpg";
 import nonveglogo from "../images/nonveg.jpg";
 import AddRemoveButtonComponent from "./AddRemoveButtonComponent";
 
-const CartItemComponent = (item) => {debugger
+const CartItemComponent = (item) => {
   return (
     <>
       <div className="menu-card p-2 m-2">

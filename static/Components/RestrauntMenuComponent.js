@@ -7,7 +7,6 @@ import MenuItemComponent from "./MenuItemComponent";
 const RestaurantMenuComponent = () => {
   const { ResId } = useParams();
   const restrauntInfo = useRestrauntMenu(ResId);
-  debugger
   if (Object.keys(restrauntInfo).length
   <= 0) {
     return null;

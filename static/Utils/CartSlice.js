@@ -19,7 +19,7 @@ const CartSlice = createSlice({
       state.items[itemIndex].quantity += 1;
       state.cartTotal = calculateCartTotal(state.items);
     },
-    removeQuantity: function (state, action) {debugger
+    removeQuantity: function (state, action) {
       const { id } = action.payload;
       const itemIndex = state.items.findIndex((item) => item.id === id);
       if (itemIndex !== -1) {
